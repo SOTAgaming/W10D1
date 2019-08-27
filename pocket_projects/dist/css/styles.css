@@ -1,0 +1,149 @@
+
+
+html {
+  box-sizing: border-box;
+  background: rgb(176, 112, 213);
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+h1 {
+  color: #F0F2EF;
+  font-size: 50px;
+  font-weight: 200;
+  margin-bottom: 10px
+}
+
+header {
+
+  padding-top: 30px;
+}
+
+.welcome {
+  display: flex;
+  font-weight: 400;
+  margin-top: 100px;
+  align-self: center;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  text-align: center;
+}
+.image-scroll {
+  display: flex;
+  justify-content: center
+}
+
+.clock-holder {
+  float: left;
+  display: flex;
+  align-self: flex-start;
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.drop-down-dog-nav {
+  float: right;
+  background-color: white;
+  color: gray;
+  padding: 10px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.drop-down-dog-list  {
+  position: absolute;
+  /* margin-top: 20px; */
+  background-color: white;
+  text-align: left;
+  font-family: 'helvetica neue';
+  padding: 10px;
+  right: 0px;
+  width: 88%;
+  font-family: 'Indie Flower', cursive;
+}
+.drop-down-dog-list li a {
+  color: black;
+}
+.drop-down-dog-list li {
+  margin-top: 5px
+}
+.drop-down-dog-list li a:hover {
+  color: blue
+}
+.slide-and-scroll{
+  background-color: white;
+  width: 70%;
+  align-self: auto;
+  padding: 20px;
+  text-align: justify
+}
+.todo-container{
+  background-color: white;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    width: 70%;
+}
+.todo-list{
+  display: flex;
+  justify-content: center
+}
+.add-todo-form input:last-child {
+  border-radius: 5px
+}
+.add-todo-form input:first-child {
+  margin-right: 5px;
+  width: 30%;
+}
+.add-todo-form {
+  display: flex;
+  justify-content: center;
+}
+
+/*  Phase 4: Slide In & Out Classes */
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.slide {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.align-left.slide {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.align-right.slide {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+/* * {
+  border: 1px solid black !important;
+} */
+/* 
+.test {
+  display: block;
+  background-color: red !important;
+  border: 10px solid red
+} */
